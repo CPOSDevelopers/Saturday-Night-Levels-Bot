@@ -9,6 +9,8 @@ Bot template to get your bot started quickly!
 2. Create a file named `.env`. Inside of it, type `TOKEN=""`, and in the quotes, insert your bot token. It should look something like this:
 `TOKEN="ABCdefGHIjklMNOpqrSTUvwx.natsumi.ahyesabottokenwhatasurprise"`
 
-3. Run `npm start` to start the bot.
+3. Run `npm install` to install dependencies.
 
-4. Profit???
+4. Run `npm start` to start the bot.
+
+5. Profit???
