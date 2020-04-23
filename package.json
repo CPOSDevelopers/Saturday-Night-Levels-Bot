@@ -1,0 +1,30 @@
+{
+  "name": "discord-bot-quickstart",
+  "version": "1.0.0",
+  "description": "Setup Discord bots really fast!",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatheticMustan/Discord-Bot-Quickstart.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "quick",
+    "start"
+  ],
+  "author": "PatheticMustan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatheticMustan/Discord-Bot-Quickstart/issues"
+  },
+  "homepage": "https://github.com/PatheticMustan/Discord-Bot-Quickstart#readme"
+}
