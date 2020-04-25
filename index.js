@@ -4,6 +4,27 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const { prefix } = require('./config.json');
 
+// glitch keep alive
+(() => {
+    const http = require('http');
+    const express = require('express');
+    const app = express();
+    const port = 8000;
+
+    app.get("/", (request, response) => {
+        console.log(Date.now() + " Ping Received");
+        response.sendStatus(200);
+    });
+    app.listen(port);
+    console.log(`App restarter setup, listening on port ${port}!`);
+    setInterval(() => {
+        http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+    }, 280000);
+})()
+// ok no more glitch
+
+
+
 var voteInfo; // Just vibin' variable
 
 // ready
