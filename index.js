@@ -38,9 +38,9 @@ client.on('message', message => {
         } catch (e) { }
     }
     // EVENTS
-    if (message.channel.id === '702566800809787494' && msg.content.includes('vote')) {
+    if (message.channel.id === '702566800809787494' && message.content.includes('vote')) {
         message.react('✅').then(() => message.react('❌'));
-    } else if (message.channel.id === '702566800809787494' && !msg.content.includes('vote')) {
+    } else if (message.channel.id === '702566800809787494' && !message.content.includes('vote')) {
         message.delete();
     }
 });
